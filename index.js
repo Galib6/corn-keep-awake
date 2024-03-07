@@ -4,8 +4,8 @@ const fetch = require("node-fetch").default; // Use .default to get the default 
 // Replace with your Strapi API URL
 const apiUrl = "https://management-api-a6m8.onrender.com/api/tests";
 
-// Ping the API every 5 minutes
-cron.schedule("*/5 * * * * *", async () => {
+// Ping the API every 5 sec
+cron.schedule("* * * * *", async () => {
   try {
     const response = await fetch(apiUrl);
     console.log(
