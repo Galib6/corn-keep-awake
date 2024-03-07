@@ -1,0 +1,13 @@
+{
+  "name": "strapi-keepawake",
+  "version": "1.0.0",
+  "description": "Keep Strapi API awake on Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "node-fetch": "^2.6.7"
+  }
+}
